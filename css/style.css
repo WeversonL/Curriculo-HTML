@@ -1,0 +1,620 @@
+@charset "UTF-8";
+
+/**************************
+Geral e Corpo do curriculo 
+***************************/
+
+body{
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.10rem;
+    color: #333;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.linha{
+    padding: 2rem 8.3%;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.barrinha{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    left: -2rem;
+    top: 0;
+}
+
+.barrinha::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+}
+
+a{
+    color: #ffa500;
+    text-decoration: none;
+}
+
+/***************************
+Topo do site 
+****************************/
+
+#social-topo{
+    width: 100%;
+}
+
+#social-topo ul{
+    list-style: none;
+    justify-content: flex-end;
+}
+
+#social-topo li{
+    margin: 5px;
+}
+
+#social-topo img{
+    height: 32px;
+}
+
+/****************************
+Perfil
+/****************************/
+
+#perfil{
+    display: flex;
+    background-color: #25A;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+#perfil figure{
+    width: 280px;
+    height: 280px;
+    border: 5px solid white;
+    overflow: hidden;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.3);
+}
+
+#perfil img{
+    width: 100%;
+}
+
+#perfil h1{
+    font-size: 3.2rem;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: -10px;
+}
+
+#perfil h3{
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+}
+
+#perfil div button{
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ffa500;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/**************************** 
+Sobre 
+*****************************/
+
+#sobre{
+    background-color: #fff;
+    display: flex;
+
+}
+
+#sobre article{
+    width: 50%;
+    align-items: center;
+}
+
+#sobre figure{
+    width: 200px;
+}
+
+#sobre img{
+    width: 100%;
+    height: auto;
+}
+
+#sobre ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sobre li{
+    display: flex;
+    margin-top: 15px;
+}
+
+.propriedade-sobre{
+    width: 75px;
+    margin-right: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/**************************** 
+Formação acadêmica 
+*****************************/
+
+#formacao{
+    background-color: #25A;
+}
+
+#formacao h2{
+    color: #fff;
+}
+
+.blocos article{
+    background-color: #eee;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blocos h4{
+    color: rgb(126, 126, 126);
+}
+
+/**************************** 
+Habilidades 
+*****************************/
+
+#habilidades{
+    background-color: #fff;
+}
+
+#barras{
+    width: calc(100% - 370px);
+}
+
+#barras ul{
+    width: 50%;
+    list-style: none;
+    margin-top: 0px;
+
+}
+
+#barras h4{
+    margin-bottom: 10px;
+}
+
+#foto-habilidades{
+    width: 370px;
+    height: 420px;
+}
+
+#foto-habilidades img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.barra-container{
+    background-color: #fff;
+    border: 2px solid #7e7e7e;
+    height: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.barra{
+    background-color: rgb(64, 179, 214);
+    background-image: linear-gradient(to right,rgb(64, 179, 214), rgb(83, 243, 109));
+    width: 10%;
+    height: 100%;
+    border-radius: 15px;
+    border: 0;
+}
+
+#csharp .barra{
+    width: 70%;
+}
+
+#java .barra{
+    width: 60%;
+}
+
+#javascript .barra{
+    width: 50%;
+}
+
+#sql .barra{
+    width: 70%;
+}
+
+#dotnet-f .barra{
+    width: 70%;
+}
+
+#html .barra{
+    width: 70%;
+}
+
+#css .barra{
+    width: 70%;
+}
+
+#git .barra{
+    width: 70%;
+}
+
+#office .barra{
+    width: 60%;
+}
+
+#linux .barra{
+    width: 80%;
+}
+
+/**************************** 
+Experiência profissional
+*****************************/
+
+#experiencia{
+    background-color: #fff;
+}
+
+#experiencia .barrinha{
+    background-color: #25A;
+}
+
+/* Portfólio */
+
+#portfolio{
+    background-color: #25A;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#portfolio article:first-child{
+    width: 33.33%;
+    width: calc(100% / 3);
+}
+#portfolio h2{
+    color: #fff;
+}
+
+#portfolio article:last-child{
+    display: flex;
+    width: 66.66%;
+    width: calc(100% / 3 * 2);
+    flex-wrap: wrap;
+}
+/*
+
+#portfolio figure{
+    margin: 0;
+}
+#portfolio figure img{
+    width: 100%;
+} */
+
+#portfolio article:first-child div{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio article:last-child div{
+    width: 30%;
+    width: calc(100% / 3 - 2rem); 
+    height: 180px;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+
+/**************************** 
+Contato
+*****************************/
+
+#contato{
+    background-color: #fff;
+}
+
+#contato > article{
+    align-items: flex-start;
+}
+
+#contato form{
+    width: 66.66%;
+    width: calc(100% / 3 * 2);
+    padding-right: 6rem;
+    box-sizing: border-box;
+}
+
+#nome{
+    margin-right: 4%;
+}
+
+#contato input{
+    height: 45px;
+    border: 2px solid #999;
+    font-size: 1.10rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#contato input[type=button]{
+    background-color: #000;
+    color: #fff;
+    padding: 0 2rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Selecionar colunas intermediarias: :nth-child(qual coluna) */
+
+#contato form div:nth-child(2) textarea{ 
+    resize: none;
+    height: 172px;
+    width: 100%;
+    border: 2px solid #999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.10rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+}
+
+#contato article form div:first-child input{
+    width: 47.5%;
+}
+
+#contato address{
+    border: 2px solid #333;
+    width: 33.33%;
+    width: calc(100% / 3);
+    padding: 0 2rem 1rem 2rem;
+    box-sizing: border-box;
+}
+
+#contato address *{
+    font-size: 1rem;
+    font-style: normal;
+    margin: 0;
+}
+
+#contato address h3{
+    margin-top: 1.10rem;
+}
+
+/**************************** 
+Rodapé / Footer
+*****************************/
+
+#footer{
+    background-color: #7e7e7e;
+    color: #fff;
+    display: flex;
+    margin-bottom: 60px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+#footer article:first-child{
+    width: 66.66%;
+    width: calc(100% / 3 * 2);
+    padding-left: 8.3%;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+#footer article:first-child p{
+    margin-top: 100px;
+}
+
+#footer article:last-child{
+    width: 44%;
+}
+
+#footer article:last-child img{
+    width: 100%;
+}
+
+#social-footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#social-footer img{
+    height: 30px;
+    margin-right: 20px;
+}
+
+/**************************** 
+Responsive / Variable
+*****************************/
+
+@media(max-width:1080px){
+    #perfil figure {
+        width: 280px;
+        height: 280px;
+        border: 5px solid white;
+        overflow: hidden;
+        box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.3);
+        margin-left: 0;
+    }
+
+    #sobre article.display-flex figure{
+        display: none;
+    }
+
+    #sobre article address{
+        margin-left: 6rem;
+    }
+
+    #contato article form div:first-child input{
+        width: 100%;
+    }
+
+    #nome {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    #contato form div:nth-child(2) textarea {
+        height: 130px;
+    }
+
+    #footer article:first-child p {
+        margin-top: 1rem;
+    }
+
+    #footer article:first-child p {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media(max-width:930px){
+
+    #sobre article address{
+        margin-left: 3rem;
+    }
+
+    #contato address {
+        border: 2px solid #333;
+        width: 30%;
+        width: calc(100% / 2);
+        padding: 0 2rem 1rem 2rem;
+        box-sizing: border-box;
+    }
+
+    #contato article form{
+        width: 50%;
+        width: calc(100% / 2);
+        padding-right: 2rem;
+    }
+    
+    #contato form div:nth-child(2) textarea {
+        height: 110px;
+    }
+
+    #footer article:first-child p {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+    }
+
+    #footer article:first-child{
+        padding-bottom: 0;
+    }
+
+}
+
+@media(max-width:850px){
+    #sobre article address{
+        margin-left: 1rem;
+    }
+
+    #perfil div button {
+        width: 100px;
+    }
+}
+
+@media(max-width:780px){
+    #sobre{
+        flex-direction: column;
+    }
+
+    #sobre article{
+        width: 100%;
+    }
+
+    #sobre article address{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .propriedade-sobre{
+        text-align: left;
+    }
+
+}
+
+@media(max-width:780px){
+    #perfil{
+        flex-direction: column;
+    }
+
+    #perfil figure{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+
+    #contato article{
+        flex-direction: column-reverse;
+    }
+
+    #contato article > *{
+        width: 100% !important;
+    }
+
+    #contato article address{
+        margin-bottom: 2rem;
+    }
+    
+    #contato article form{
+        padding-right: 0;
+    }
+
+    #footer article:first-child{
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    #footer article:first-child ul{
+        justify-content: center;
+    }
+
+    #footer article:last-child{
+        display: none;
+    }
+
+    #barras {
+        width: auto;
+    }
+}
